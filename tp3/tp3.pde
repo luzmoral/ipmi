@@ -1,25 +1,26 @@
-//link al video de la explicacion
-PImage figuraDeGuia;
+PImage figuraDeGuia; 
 int cantidad;
 float tamanoCelda;
 float tamanoCirculo;
-color colorActual = color(0); // color inicial: negro
+color colorActual ;
 
 void setup() {
   size(800, 400);
   figuraDeGuia = loadImage("figuraDeGuia.png");
-  cantidad = 12;
-  tamanoCelda = 400 / cantidad;
+  cantidad = 14;
+  tamanoCelda = 400 /cantidad;
   tamanoCirculo = tamanoCelda;
+  colorActual = color(0);// color inicial: negro
+
 }
 
 void draw() {
   
   //cambia el fondo de color segun la posivion del mouse 
   if (mouseX < width/2){
-  background(255); // blanco si esta del lado izquierdo
+  background(200); // gris  si esta del lado izquierdo
   }else {
-     background(200); // gris si esta del lado derecho
+     background(255); // blanco si esta del lado derecho
   }
   
   image(figuraDeGuia, 0, 0, 400, 400);
