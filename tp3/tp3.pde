@@ -1,3 +1,4 @@
+//https://youtu.be/NOVWNj7owNQ    link de la explicacion del video 
 PImage figuraDeGuia; 
 int cantidad;
 float tamanoCelda;
